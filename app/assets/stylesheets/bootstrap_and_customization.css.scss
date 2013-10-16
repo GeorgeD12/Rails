@@ -3,3 +3,10 @@ $navbar-default-bg:  #3498db;
 $navbar-default-link-color: #ecf0f1;
 $font-size-base: 18px;
 @import 'bootstrap';
+.center {
+	text-align: center;
+}
+.navbar-default .navbar-brand {
+	font-weight: bold;
+	color: white;
+}
