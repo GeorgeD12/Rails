@@ -6,6 +6,9 @@ Pinteresting::Application.routes.draw do
   get "about" => "pages#about"
   get "services" => "pages#services"
   get "contact" => "pages#contact"
+  resources :inquiries, :only => [:new, :create] do
+  get 'thank_you', :on => :collection
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
