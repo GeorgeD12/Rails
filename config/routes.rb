@@ -5,7 +5,7 @@ Pinteresting::Application.routes.draw do
   root 'pins#index'
   get "about" => "pages#about"
   get "services" => "pages#services"
-  get "contact" => "pages#contact"
+  get "contact" => "inquiries#new"
   resources :inquiries, :only => [:new, :create] do
   get 'thank_you', :on => :collection
 end
